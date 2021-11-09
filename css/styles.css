@@ -228,8 +228,6 @@ header {
 
 .products {
   padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 82px;
 }
 
 .products-tittle {
@@ -380,10 +378,6 @@ button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.btn-filter .button.active {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
 
 .filter {
   padding-top: 94px;
@@ -401,7 +395,6 @@ button:focus {
 }
 
 .project-list {
-  padding-bottom: 24px;
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
 
@@ -422,30 +415,16 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 4px;
 }
 
+.project-box {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+}
 .filter-name {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-
-  padding-left: 24px;
-}
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid black;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
