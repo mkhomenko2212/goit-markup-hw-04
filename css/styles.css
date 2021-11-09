@@ -435,3 +435,17 @@ button:focus {
 
   padding-left: 24px;
 }
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
