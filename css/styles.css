@@ -63,7 +63,7 @@ img {
 }
 /* Logo */
 .main-nav .logo {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -148,8 +148,8 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.link-adress:hover,
-.link-adress:focus {
+.main-nav .adress:hover,
+.main-nav .adress:focus {
   color: var(--accent-color);
 }
 
@@ -161,6 +161,13 @@ img {
 .adress .item + .item {
   margin-left: 50px;
 }
+
+.icon-nav {
+  width: 16px;
+  height: 12px;
+  --icon-color: currentColor;
+}
+
 /* Шапка сайта */
 
 .hero-tittle {
@@ -179,6 +186,20 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Button */
@@ -201,6 +222,19 @@ img {
 }
 
 /* Преимущества */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .advantage {
   padding-top: 0;
