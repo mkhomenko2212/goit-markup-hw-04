@@ -169,8 +169,8 @@ img {
   --icon-color: currentColor;
 }
 
-.icon-nav:hover,
-.icon-nav:focus {
+.icon-nav:focus,
+.icon-nav:hover {
   color: var(--accent-color);
 }
 
@@ -270,6 +270,22 @@ img {
   margin-left: 30px;
 }
 
+.advantage-fon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-background-color);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advantage-svg {
+  width: 70px;
+  height: 70px;
+}
+
 /* Чем мы занимаемся */
 
 .products {
@@ -344,6 +360,21 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   padding-bottom: 30px;
+}
+.list-social {
+  display: flex;
+}
+
+.social-nets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-nets {
+  width: 20px;
+  height: 20px;
+  --icon-color: currentColor;
 }
 
 /* Подвал */
