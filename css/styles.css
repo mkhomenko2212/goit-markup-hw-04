@@ -148,9 +148,10 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.main-nav .adress:hover,
-.main-nav .adress:focus {
+.main-nav .item:hover,
+.main-nav .item:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .adress {
@@ -166,6 +167,11 @@ img {
   width: 16px;
   height: 12px;
   --icon-color: currentColor;
+}
+
+.icon-nav:hover,
+.icon-nav:focus {
+  color: var(--accent-color);
 }
 
 /* Шапка сайта */
