@@ -148,8 +148,9 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.main-nav .item:hover,
-.main-nav .item:focus {
+
+.link-adress:focus,
+.link-adress:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -166,12 +167,8 @@ img {
 .icon-nav {
   width: 16px;
   height: 12px;
-  --icon-color: currentColor;
-}
-
-.icon-nav:focus,
-.icon-nav:hover {
-  color: var(--accent-color);
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Шапка сайта */
@@ -254,6 +251,9 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
+
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .advantage .description {
@@ -361,8 +361,15 @@ img {
 
   padding-bottom: 30px;
 }
-.list-social {
+.social-link-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-social {
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .social-nets {
@@ -370,11 +377,71 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .logo-nets {
   width: 20px;
   height: 20px;
-  --icon-color: currentColor;
+  fill: #afb1b8;
+}
+.logo-nets:hover,
+.logo-nets:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 100%;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+}
+
+/* Клиенты */
+
+.clients-tittle {
+  color: var(--tittle-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item {
+  display: block;
+}
+
+.clients-list .clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.icon-clients {
+  width: 106px;
+  height: 60px;
 }
 
 /* Подвал */
@@ -416,6 +483,35 @@ img {
 .page-footer .adress-list {
   margin-top: 20px;
 }
+
+.footer-social {
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-list {
+  margin-left: 70px;
+  text-align: center;
+}
+
+.footer-social-link {
+  display: flex;
+}
+.footer-logo-nets {
+  fill: var(--primary-white-color);
+  width: 20px;
+  height: 20px;
+}
 /* Страница Портфолио */
 
 /* Фильтр */
@@ -455,6 +551,8 @@ img {
 button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter {
@@ -484,6 +582,10 @@ button:focus {
   width: 370px;
 }
 
+.project-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-list:nth-child(3n) {
   margin-right: 0;
 }
