@@ -312,6 +312,7 @@ img {
 .products .item + .item {
   margin-left: 30px;
 }
+
 /* Наша команда */
 .team {
   background-color: var(--secondary-background-color);
@@ -568,12 +569,6 @@ button:focus {
   text-decoration: none;
 }
 
-.section .project {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0px;
-}
-
 .project-list {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -583,6 +578,12 @@ button:focus {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+}
+
+.section .project {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
 }
 
 .project-list:hover {
