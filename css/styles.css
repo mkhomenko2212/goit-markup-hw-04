@@ -165,8 +165,8 @@ img {
 }
 
 .icon-nav {
-  width: 16px;
-  height: 12px;
+  /* width: 16px;
+  height: 12px; */
   margin-right: 10px;
   fill: currentColor;
 }
@@ -174,10 +174,11 @@ img {
 /* Шапка сайта */
 
 .hero-tittle {
+  font-family: Roboto, sans-serif;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.17;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -212,6 +213,9 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
+  font-weight: bold;
+  line-height: 1.87;
+
   cursor: pointer;
 
   border-radius: 4px;
@@ -366,6 +370,16 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  fill: #afb1b8;
+}
+
 .list-social {
   margin-top: 16px;
   margin-left: 32px;
@@ -380,24 +394,13 @@ img {
 .logo-nets {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
 }
-.logo-nets:hover,
-.logo-nets:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white-color);
-}
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  border-radius: 100%;
-}
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 44px;
-  width: 44px;
+  border-radius: 50%;
+  fill: var(--primary-white-color);
 }
 
 /* Клиенты */
